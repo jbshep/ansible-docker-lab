@@ -1,0 +1,7 @@
+- name: Ping all managed nodes
+  hosts: node_servers
+  gather_facts: no
+
+  tasks:
+    - name: Ping the node
+      ping:
